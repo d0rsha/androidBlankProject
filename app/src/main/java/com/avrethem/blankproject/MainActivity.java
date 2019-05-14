@@ -67,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
         String deviceInfo = "device: Device {";
         deviceInfo += "approach:native,";
-        deviceInfo += "model:" + Build.MANUFACTURER + ",";
+        deviceInfo += "version:" + Build.VERSION.RELEASE + ",";
+        deviceInfo += "manufacturer:" + Build.MANUFACTURER + ",";
         deviceInfo += "model:" + android.os.Build.MODEL + ",";
         deviceInfo += "platform:android,";
         // Always ask for permission
@@ -81,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         deviceInfo += "android-api:" + android.os.Build.VERSION.SDK_INT + ",";
         deviceInfo += "product:" + android.os.Build.PRODUCT + ",";
         deviceInfo += "isVirtual:" + isEmulator() + ",";
+
 
 
         deviceInfo += "device:" + android.os.Build.DEVICE + ",";
